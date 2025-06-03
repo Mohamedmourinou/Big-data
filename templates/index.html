@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Nutrition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">Chatbot Nutrition</div>
+        <div class="chat-body">
+            <div class="chat-message bot">
+                <div class="message-content">Bonjour ! Je suis votre assistant nutrition. Posez-moi vos questions sur l'alimentation saine !</div>
+                <div class="timestamp"></div>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" placeholder="Tapez votre question ici...">
+            <button>Envoyer</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='java_script.js') }}"></script>
+</body>
+</html>
